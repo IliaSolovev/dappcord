@@ -17,7 +17,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server:start": "node server.js",
+    "hardhat:test": "npx hardhat test",
+    "hardhat:start": "npx hardhat node",
+    "hardhat:deploy": "npx hardhat run ./scripts/deploy.js --network localhost",
+    "remix:share": "remixd -s . -u https://remix.ethereum.org"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +45,7 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.1",
     "@openzeppelin/contracts": "^4.8.1",
+    "@remix-project/remixd": "^0.6.14",
     "hardhat": "^2.12.6"
   }
 }
